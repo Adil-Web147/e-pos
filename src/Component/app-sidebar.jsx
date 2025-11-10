@@ -13,9 +13,9 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
-  SidebarRail,
   useSidebar,
 } from "@/components/ui/sidebar";
+import { Separator } from "@/components/ui/separator";
 
 
 
@@ -54,15 +54,19 @@ const data = {
   ],
 };
 
+
+const NavBarState = {
+  Expanded: "expanded",
+  Collapsed: "collapsed",
+};
 export function AppSidebar(props) {
   const { state } = useSidebar();
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-       {state === "expanded" && (
+       {state === NavBarState.Expanded && (
           <>
             <div className="p-4 text-lg font-semibold text-white">POS system</div>
-            
           </>
         )}
       </SidebarHeader>
@@ -72,7 +76,6 @@ export function AppSidebar(props) {
       <SidebarFooter>
         <NavUser user={data.user} />
       </SidebarFooter>
-      {/* <SidebarRail /> */}
     </Sidebar>
   );
 }
