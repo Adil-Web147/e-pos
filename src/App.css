@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Global Background & Text Colors */
+html, body {
+  font-family: 'Manrope', sans-serif;
+  background: linear-gradient(135deg, #141E30 0%, #243B55 100%) !important;
+  background-attachment: fixed !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: white !important;
+}
+
+/* Force white text for all elements */
+* {
+  color: white !important;
+}
+
+/* Specific elements white text guarantee */
+body, h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, label, li, ul, ol {
+  color: white !important;
+}
+
+/* Transparent backgrounds */
+* {
+  background: transparent !important;
+}
+
+/* Sidebar specific styling */
+.sidebar-inset, 
+[data-sidebar="inset"], 
+main, 
+.sidebar-content,
+.sidebar-wrapper {
+  background: transparent !important;
+}
+
+/* Sidebar menu items */
+[data-sidebar="menu"], 
+[data-sidebar="content"],
+[data-sidebar="header"],
+[data-sidebar="footer"],
+[data-sidebar="group"],
+[data-sidebar="group-label"],
+[data-sidebar="menu-button"],
+[data-sidebar="menu-sub-button"] {
+  background: transparent !important;
+}
+
+/* Hover states */
+[data-sidebar="menu-button"]:hover,
+[data-sidebar="menu-sub-button"]:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Active state */
+[data-sidebar="menu-button"][data-active="true"] {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+/* Input fields styling */
+input, textarea, select {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Button styling */
+button {
+  background:  #4681f4!important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+button:hover {
+  background: #1b60e9 !important;
+}
