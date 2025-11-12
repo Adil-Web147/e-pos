@@ -15,7 +15,7 @@ import {
   SidebarHeader,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { Separator } from "@/components/ui/separator";
+
 
 
 
@@ -70,6 +70,7 @@ export function AppSidebar(props) {
           </>
         )}
       </SidebarHeader>
+      
       <SidebarContent >
         <NavMain items={data.navMain} />
       </SidebarContent>
