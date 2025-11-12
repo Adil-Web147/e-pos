@@ -6,10 +6,11 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { Routes, Route, useLocation } from "react-router-dom";
-import Categories from "./catagory";
+
 import Dashboard from "./dashboard";
 import Products from "./products";
 import Users from "./user";
+import CategoriesPage from "../Categories/CategoriesPage";
 
 export default function Page() {
 
@@ -47,7 +48,7 @@ export default function Page() {
               <main className="p-6 text-white">
             <Routes>
               <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/categories" element={<Categories />} />
+              <Route path="/categories" element={<CategoriesPage />} />
               <Route path="/products" element={<Products />} />
               <Route path="/users" element={<Users />} />
 
